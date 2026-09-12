@@ -314,7 +314,14 @@ However, two requirements must be fulfilled:
 
 *Write your answer here:*
 ```text
+1. type User struct {
+      ID            int `json:"id"`
+      FullName      string `json:"full_name"`
+      Email         string `json:"email"`
+      PasswordHash  string `json:"-"`
+}
 
+2. `json:"-"` instruct Go to completely ignore the field during JSON serialization(`json.Marshal`).
 
 ```
 
@@ -332,7 +339,9 @@ Your team is building an **E-Commerce Platform**. You need to store two main mod
 
 *Write your answer here:*
 ```text
+1. I will chose MySQL for User Wallets and MongoDB for Product Catalog
 
+2. 
 
 ```
 
